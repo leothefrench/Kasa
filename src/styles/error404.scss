@@ -1,0 +1,18 @@
+@import 'variables';
+
+.Error404 {
+    display: flex;
+    width: 37.3125rem;
+    height: 16.4375rem;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+
+    &__title {
+        color: $primary-color;
+        @include text-typography;
+        font-size: 18rem;
+        font-weight: 700;
+        line-height: 142.6%;
+    }
+}

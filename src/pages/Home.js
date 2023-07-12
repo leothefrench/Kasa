@@ -1,5 +1,11 @@
-export const Home = () => {
+import HomeBanner from '../components/home/HomeBanner'
+
+const Home = () => {
   return (
-    <div>Home</div>
+    <>
+      <HomeBanner />
+    </>
   )
 }
+
+export default Home;

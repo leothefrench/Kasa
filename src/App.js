@@ -1,20 +1,13 @@
-import {Routes, Route} from 'react-router-dom';
-import { Home } from './components/Home';
-import { Accueil } from './components/Accueil';
-import { APropos } from './components/APropos';
-import { PageNotFound } from './components/PageNotFound';
-import { Navbar } from './components/header/Navbar'
+import Router from './components/routes/Routes';
+import Header from './components/layout/Header';
+import Footer from './components/layout/Footer';
 
 function App() {
   return (
     <>
-    <Navbar />
-    <Routes>
-      <Route path='/' element={<Home />} />
-      <Route path='Accueil' element={<Accueil />} />
-      <Route path='APropos' element={<APropos />} />
-      <Route path='*' element={<PageNotFound />} />
-    </Routes>
+      <Header />
+      <Router />
+      <Footer />
     </>
   );
 }

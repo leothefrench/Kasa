@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap");
+.Error404 {
+  display: flex;
+  width: 37.3125rem;
+  height: 16.4375rem;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.Error404__title {
+  color: #FF6060;
+  font-family: "Montserrat", sans-serif;
+  color: #FFF;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18rem;
+  font-weight: 700;
+  line-height: 142.6%;
+}

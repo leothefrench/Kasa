@@ -1,0 +1,32 @@
+@import 'variables';
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2.5rem auto;
+    width: 95%;
+
+    &__logo {
+        width: 10rem;
+    }
+}
+
+.navbar {
+    @include text-typography;
+    color: $primary-color;
+    
+    &  ul {
+        display: flex;
+    }
+
+    &__link {
+        display: flex;
+        text-decoration: none;
+    }
+
+    &__link:active {
+        text-decoration: underline;
+    }
+
+}

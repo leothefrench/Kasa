@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
+$primary-color: #FF6060;
+
+$color-text: #fff;
+
+@mixin text-typography {
+    font-family: 'Montserrat', sans-serif;
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+}
+
