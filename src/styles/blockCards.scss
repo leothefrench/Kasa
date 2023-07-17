@@ -1,0 +1,11 @@
+@import 'variables';
+
+.blockCards {
+    border-radius: 1.5625rem;
+    background: #F6F6F6;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 2rem auto;
+}

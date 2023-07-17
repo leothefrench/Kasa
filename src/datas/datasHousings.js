@@ -617,3 +617,5 @@ const housings = [
 		]
 	}
 ]
+
+export default housings;

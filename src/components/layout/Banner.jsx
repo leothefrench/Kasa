@@ -1,4 +1,4 @@
-import './Banner'
+import '../../styles/banner.scss'
 
 const Banner = (props) => {
   return (

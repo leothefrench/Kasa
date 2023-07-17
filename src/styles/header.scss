@@ -5,7 +5,7 @@
     justify-content: space-between;
     align-items: center;
     margin: 2.5rem auto;
-    width: 95%;
+    width: 85%;
 
     &__logo {
         width: 10rem;
@@ -14,19 +14,10 @@
 
 .navbar {
     @include text-typography;
-    color: $primary-color;
-    
-    &  ul {
-        display: flex;
-    }
+    font-size: 1rem;
 
     &__link {
-        display: flex;
-        text-decoration: none;
+        color: $primary-color;
+        margin-left: 3rem;
     }
-
-    &__link:active {
-        text-decoration: underline;
-    }
-
 }
