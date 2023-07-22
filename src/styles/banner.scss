@@ -12,13 +12,18 @@
         height: 9rem;
         border-radius: 1.5rem;
         object-fit: cover;
-        filter: brightness(70%);
-
+        // background-image: linear-gradient(50%);
+        mix-blend-mode: darken;
     }
+    
     &__title {
         z-index: 1;
         position: absolute;
-        font-size: 1.5rem;
+        font-size: 2rem;
         color: #fff;
+
+        @media (max-width: 375px) {
+            font-size: .75rem;
+        }
     }
 }

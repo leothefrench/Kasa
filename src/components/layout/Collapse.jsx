@@ -17,10 +17,10 @@ const Collapse = (props) => {
     <>
       <div onClick={openCollapse} className='collapse'>
         <h2 className='collapse__title'>{props.title}</h2>
-        {!open ? <i>{upArrow}</i> : <i>{downArrow}</i>}
+        {!open ? <i className='collapse__arrow'>{downArrow}</i> : <i className='collapse__arrow'>{upArrow}</i>}
       </div>
 
-      <div className='collapse__content'>{props.content}</div>
+      {open && <div className='collapse__content'>{props.content}</div>}
     </>
   )
 }

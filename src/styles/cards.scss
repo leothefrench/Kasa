@@ -2,7 +2,10 @@
 
 .card {
     width: 29%;
-    margin: 2rem auto 1rem auto;
+
+    @media (max-width: 375px) {
+        width: 90%;
+    }
 
     &__link {
         text-decoration: none;
@@ -11,15 +14,16 @@
     &__cover {
         width: 100%;
         height: 290px;
-        object-fit: contain;
-        border-radius: 1rem;
+        object-fit: cover;
+        border-radius: .63rem;
     }
 
     &__title {
         position: absolute;
         z-index: 1;
-        font-size: 1.1rem;
-        // @include text-typography;
+        @include text-typography;
+        font-size: .7rem;
+        color: red;
     }
 }
 

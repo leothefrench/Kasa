@@ -1,11 +1,7 @@
-
+import HousingContent from '../components/housings/HousingContent'
 
 const HousingsPages = () => {
-  return (
-    <>
-      <h1>PAGE LOGEMENTS</h1>
-    </>
-  )
+  return <HousingContent />
 }
 
 export default HousingsPages;

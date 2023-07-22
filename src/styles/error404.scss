@@ -15,10 +15,13 @@
         height: 263px;
         font-size: 12rem;
         font-weight: 700;
+        margin-top: 10rem;
         margin-bottom: 1.5rem;
+        text-align: center;
 
-        @media (max-width: 768px) {
+        @media (max-width: 375px) {
             font-size: 6rem;
+            margin: auto;
         }
     }
 
@@ -27,15 +30,16 @@
         color: $primary-color;
         margin-bottom: 1.5rem;
 
-        @media (max-width: 768px) {
+        @media (max-width: 375px) {
                 font-size: 0.8rem;
             }
     }
     &__link {
         color: $primary-color;
         font-size: 1.1rem;
+        margin-bottom: 9rem;
     
-        @media (max-width: 768px) {
+        @media (max-width: 375px) {
                 font-size: 1rem;
             }
     }

@@ -9,15 +9,33 @@
 
     &__logo {
         width: 10rem;
+
+        @media (max-width: 375px) {
+            width: 7rem;;
+        }
     }
 }
 
 .navbar {
     @include text-typography;
-    font-size: 1rem;
+    font-size: 1.2rem;
 
     &__link {
         color: $primary-color;
         margin-left: 3rem;
+
+        @media (max-width: 375px) {
+            font-size: .75rem;
+            margin-left: 1rem;
+        }
+
+        &--isActive {
+            text-decoration: underline;
+        }
+        &--inActive {
+            text-decoration: none;
+        }
     }
 }
+
+
