@@ -5,26 +5,27 @@
     justify-content: space-between;
     align-items: center;
     margin: 2.5rem auto;
-    width: 85%;
+    width: 90%;
 
     &__logo {
         width: 10rem;
-
-        @media (max-width: 375px) {
+        @media (max-width: 768px) {
             width: 7rem;;
         }
     }
 }
 
 .navbar {
-    @include text-typography;
+    font-family: 'Montserrat', sans-serif;
     font-size: 1.2rem;
+    font-weight: 500;
+    text-align: right;
 
     &__link {
         color: $primary-color;
         margin-left: 3rem;
 
-        @media (max-width: 375px) {
+        @media (max-width: 768px) {
             font-size: .75rem;
             margin-left: 1rem;
         }

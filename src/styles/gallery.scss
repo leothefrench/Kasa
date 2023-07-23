@@ -1,0 +1,140 @@
+@import 'variables';
+
+.caroussel {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+
+    &:hover {
+        .caroussel__picture__index {
+            opacity: 1;
+        }
+    }
+
+    &__container {
+        display: flex;
+        transition: transform .2s ease;
+
+
+        &__image {
+            width: 100%;
+            height: 350px;
+            border-radius: 1.53rem;
+            flex-shrink: 0;
+            object-fit: cover;
+        }
+    }
+
+    &__arrowsControl {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+
+
+        &__img {
+            width: 50px;
+            height: auto;
+            font-size: 3rem;
+            color: white;
+            opacity: .5;
+            cursor: pointer;
+            :hover {
+                opacity: 1;
+            }
+        }
+    }
+    
+    &__picture__index {
+    position: absolute;
+    color: white;
+    bottom: 10px;
+    font-size: 15px;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 0.2rem 0.4rem;
+    border-radius: 0.3rem;
+    opacity: 0;
+    transition: opacity 250ms ease-in-out;
+    }
+}
+
+.header-housing {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__info {
+        width: 90%;
+        @include text-typography;
+        color: $primary-color;
+
+        &__title {
+            margin-top: 1.5rem;
+        }
+
+        &__subtitle {
+            font-size: 1rem;
+            margin-bottom: .7rem;
+        }
+
+        &__tags {
+            display: flex;
+            text-align: center;
+        }
+
+        &__tags>p {
+            background-color: $primary-color;
+            border: 1px solid black;
+            border-radius: 0.63rem;
+            font-size: .7rem;
+            color: $secondary-color;
+            margin-right: .62rem;
+            padding: 0.19rem 2.31rem;
+        }
+    }
+
+    &__host {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+        &__info {
+            display: flex;
+
+            &__name {
+                font-size: 1rem;
+                color: $primary-color;
+            }
+
+            &__picture {
+                width: 5.5rem;
+                border-radius: 50%;
+            }
+        }
+    }
+}
+
+.stars {
+    color: $primary-color;
+}
+
+.housing-section__collapses {
+    display: flex;
+    width: 90%;
+    margin: 1.5rem auto;
+    justify-content: space-between;
+
+    &__content {
+        width: 47%;
+    }
+}

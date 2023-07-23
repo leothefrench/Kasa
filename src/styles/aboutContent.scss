@@ -8,7 +8,7 @@
     width: 75%;
     margin: 1rem auto;
 
-    @media (max-width: 375px) {
+    @media (max-width: 768px) {
         width: 90%;
     }
 
@@ -28,7 +28,7 @@
     border-radius: 0.63rem;
     width: 100%;
 
-    @media (max-width: 375px) {
+    @media (max-width: 768px) {
         border-radius: 0.3125rem;
     }
 
@@ -39,7 +39,7 @@
         margin-top: 0.35rem;
         margin-bottom: 0.46rem;
 
-        @media (max-width: 375px) {
+        @media (max-width: 768px) {
             border-radius: 0.3125rem;
             font-size: .75rem;
         }
@@ -61,7 +61,7 @@
         padding: 2.25rem 1.69rem 1.19rem 1.12rem;
         flex-shrink: 0;
 
-        @media (max-width: 375px) {
+        @media (max-width: 768px) {
             font-size: .75rem;
             height: 8rem;
             border-bottom: 1rem;

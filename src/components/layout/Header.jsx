@@ -9,8 +9,8 @@ const Header = () => {
             <img src={LogoHeader} alt="logo-kasa" className='header__logo' />
         </div>
         <nav className='navbar'>
-            <NavLink to='/home' className={({ isActive }) => (isActive ? 'navbar__link--isActive' : 'navbar__link--inActive') }>Accueil</NavLink>
-            <NavLink to='/about' className={({ isActive }) => (isActive ? 'navbar__link--isActive' : 'navbar__link--inActive') }
+            <NavLink to='/home' className={({ isActive }) => (isActive ? 'navbar__link navbar__link--isActive' : 'navbar__link navbar__link--inActive') }>Accueil</NavLink>
+            <NavLink to='/about' className={({ isActive }) => (isActive ? 'navbar__link navbar__link--isActive' : 'navbar__link navbar__link--inActive') }
             >A Propos</NavLink>
         </nav>
     </header>

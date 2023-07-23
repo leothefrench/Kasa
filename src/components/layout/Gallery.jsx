@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faAngleLeft, faAngleRight} from '@fortawesome/free-solid-svg-icons'
+import '../../styles/gallery.scss'
 
 const rightArrow = <FontAwesomeIcon icon={faAngleRight} />
 const leftArrow = <FontAwesomeIcon icon={faAngleLeft} />
@@ -38,11 +39,13 @@ const Gallery = (props) => {
       <div className="caroussel__container" style={{transform: `translateX(-${pictureIndex * displayImg()}px)`}}>
         { props.img.map((picture, i) => <img src={picture} key={i} alt="housing" className="caroussel__container__image" />) }
       </div>
+      {/* {props.img.length > 1 && <> */}
       <div className="caroussel__arrowsControl">
-        <i className='caroussel__arrowsControl__img' onClick={nextPicture}>{rightArrow}</i>
         <i className='caroussel__arrowsControl__img' onClick={previousPicture}>{leftArrow}</i>
+        <i className='caroussel__arrowsControl__img' onClick={nextPicture}>{rightArrow}</i>
       </div>
-      <div className="picture_index">{ pictureIndex + 1 } / {props.img.length}</div>
+      <div className="caroussel__picture__index">{ pictureIndex + 1 } / {props.img.length}</div>
+        {/* </>} */}
     </div>
   )
 }
