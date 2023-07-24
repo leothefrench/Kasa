@@ -25,6 +25,9 @@
             border-radius: 1.53rem;
             flex-shrink: 0;
             object-fit: cover;
+            @media (max-width: 768px) {
+                border-radius: .7rem;
+            }
         }
     }
 
@@ -39,6 +42,10 @@
         transform: translate(-50%, -50%);
         text-align: center;
 
+        @media (max-width: 768px) {
+            padding: 1rem 0;
+        }
+
 
         &__img {
             width: 50px;
@@ -49,6 +56,10 @@
             :hover {
                 opacity: 1;
             } 
+            @media (max-width: 768px) {
+                width: 13px;
+                font-size: 2rem;
+            }
         }
     }
     
@@ -71,20 +82,27 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    @media (max-width:768px) {
+        flex-direction: column;
+    }
 
     &__info {
         width: 90%;
         @include text-typography;
         color: $primary-color;
         font-size: 1rem;
-
+        @media (max-width: 768px) {
+            width: 100%;
+            margin-top: 0.9rem;
+        }
         &__title {
-            // margin-top: 1.5rem;
+            font-weight: 500;
         }
 
         &__subtitle {
             font-size: 1rem;
             margin-bottom: .7rem;
+            font-weight: 500;
         }
 
         &__tags {
@@ -98,7 +116,10 @@
             font-size: .7rem;
             color: $secondary-color;
             margin-right: .62rem;
-            padding: 0.19rem 2.31rem;
+            padding: 0.4rem 2.33rem;
+            @media (max-width: 768px) {
+                padding: .1rem 1rem;
+            }
         }
     }
 
@@ -106,14 +127,26 @@
         display: flex;
         flex-direction: column;
         text-align: center;
+        @media (max-width: 768px) {
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
 
         &__info {
             display: flex;
             margin-top: 1rem;
+            @media (max-width: 768px) {
+                align-items: center;
+            }
 
             &__name {
                 font-size: 1rem;
                 color: $primary-color;
+                @media (max-width: 768px) {
+                    width: 45%;
+                }
             }
 
             &__picture {
@@ -125,12 +158,17 @@
 }
 
 .stars {
-    color: $primary-color;
     text-align: right;
     margin-top: 1rem;
 
     & > i {
         margin-left: .7rem;
+    }
+    &__stars--color {
+        color: $primary-color;
+        &--grey {
+            color: rgb(13, 148, 31);
+        }
     }
 }
 
@@ -139,8 +177,15 @@
     width: 90%;
     margin: 1.5rem auto;
     justify-content: space-between;
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
 
     &__content {
         width: 47%;
+        @media (max-width: 768px ) {
+            width: 100%;
+            margin-bottom: 1rem;
+        }
     }
 }

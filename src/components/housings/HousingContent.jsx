@@ -9,14 +9,14 @@ const HousingContent = () => {
 
   const { id } = useParams()
   const housing = housings.find(housing => housing.id === id)
-  console.log(housing);
 
   if(housing === undefined ) {
-    return   (  <div className='Error404'>
-        <h1 className='Error404__title'>404</h1>
-        <h2 className='Error404__subtitle'>Oups! La page que vous demandez n'existe pas.</h2>
-        <NavLink to='/home' className='Error404__link'>Retourner sur la page d'accueil</NavLink>
-    </div>
+    return ( 
+      <div className='Error404'>
+          <h1 className='Error404__title'>404</h1>
+          <h2 className='Error404__subtitle'>Oups! La page que vous demandez n'existe pas.</h2>
+          <NavLink to='/home' className='Error404__link'>Retourner sur la page d'accueil</NavLink>
+      </div>
     )
   }
 

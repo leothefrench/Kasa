@@ -4,12 +4,16 @@
     border-radius: 1.5625rem;
     background: #F6F6F6;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     width: 90%;
     margin: 2rem auto;
 
     @media (max-width: 768px) {
+        background-color: #fff;
         flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        width: 95%;
     }
 }

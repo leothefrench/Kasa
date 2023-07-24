@@ -7,7 +7,8 @@
     position: relative;
 
     @media (max-width: 768px) {
-        width: 90%;
+        width: 100%;
+        margin-top: 1rem;
     }
 
     &__link {
@@ -19,6 +20,7 @@
         height: 290px;
         object-fit: cover;
         border-radius: .63rem;
+    background: linear-gradient(#FFFFFF 0%, #000000);
     }
 
     &__title {
