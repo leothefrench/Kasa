@@ -3,7 +3,7 @@ import {faStar} from '@fortawesome/free-solid-svg-icons'
 
 const star = <FontAwesomeIcon icon={faStar} />
 
-const StarsScaleLike = (props) => {
+const StarsScale = (props) => {
   const scaleRating = props.rating
   const levelOfStars = [1, 2, 3, 4, 5]
   const numberStarsLike = levelOfStars.map(number => scaleRating >= number ? <i key={number.toString()}>{ star }</i>
@@ -15,4 +15,4 @@ const StarsScaleLike = (props) => {
     </div>
   )
 }
-export default StarsScaleLike
+export default StarsScale

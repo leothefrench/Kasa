@@ -16,7 +16,7 @@
 
     &__container {
         display: flex;
-        transition: transform .2s ease;
+        transition: transform .7s ease;
 
 
         &__image {
@@ -45,11 +45,10 @@
             height: auto;
             font-size: 3rem;
             color: white;
-            opacity: .5;
             cursor: pointer;
             :hover {
                 opacity: 1;
-            }
+            } 
         }
     }
     
@@ -77,9 +76,10 @@
         width: 90%;
         @include text-typography;
         color: $primary-color;
+        font-size: 1rem;
 
         &__title {
-            margin-top: 1.5rem;
+            // margin-top: 1.5rem;
         }
 
         &__subtitle {
@@ -92,9 +92,8 @@
             text-align: center;
         }
 
-        &__tags>p {
+        &__tags > p {
             background-color: $primary-color;
-            border: 1px solid black;
             border-radius: 0.63rem;
             font-size: .7rem;
             color: $secondary-color;
@@ -110,6 +109,7 @@
 
         &__info {
             display: flex;
+            margin-top: 1rem;
 
             &__name {
                 font-size: 1rem;
@@ -126,6 +126,12 @@
 
 .stars {
     color: $primary-color;
+    text-align: right;
+    margin-top: 1rem;
+
+    & > i {
+        margin-left: .7rem;
+    }
 }
 
 .housing-section__collapses {

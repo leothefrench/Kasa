@@ -35,7 +35,7 @@
     &__title {
         margin-left: 1.13rem;
         @include text-typography;
-        font-size: 1.2rem;
+        font-size: 1rem;
         margin-top: 0.35rem;
         margin-bottom: 0.46rem;
 
@@ -54,12 +54,16 @@
     &__content {
         @include text-typography;
         font-weight: 400;
-        font-size: 1.2rem;
+        font-size: 1rem;
         color: $primary-color;
         background-color: $secondary-color;
         border-radius: 0 0 0.63rem 0.63rem;
         padding: 2.25rem 1.69rem 1.19rem 1.12rem;
         flex-shrink: 0;
+
+        & ul li {
+        list-style-type: none;
+        }
 
         @media (max-width: 768px) {
             font-size: .75rem;

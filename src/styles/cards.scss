@@ -1,7 +1,10 @@
 @import 'variables';
 
 .card {
-    width: 29%;
+    width: 30%;
+    list-style-type: none;
+    margin-top: 2rem;
+    position: relative;
 
     @media (max-width: 768px) {
         width: 90%;
@@ -21,9 +24,12 @@
     &__title {
         position: absolute;
         z-index: 1;
+        top: 85%;
+        left: 3%;
         @include text-typography;
+        color: $color-text;
         font-size: .7rem;
-        color: red;
+        width: 40%;
     }
 }
 

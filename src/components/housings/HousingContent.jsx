@@ -2,9 +2,8 @@ import { NavLink, useParams} from 'react-router-dom'
 import housings from '../../datas/datasHousings'
 import '../../styles/aboutContent.scss'
 import Gallery  from  '../layout/Gallery'
-import StarsScaleRate from './StarsScale'
+import StarsScale from './StarsScale'
 import Collapse from '../layout/Collapse'
-// import Error404 from '../../components/error404'
 
 const HousingContent = () => {
 
@@ -16,7 +15,7 @@ const HousingContent = () => {
     return   (  <div className='Error404'>
         <h1 className='Error404__title'>404</h1>
         <h2 className='Error404__subtitle'>Oups! La page que vous demandez n'existe pas.</h2>
-        <NavLink to='/Home' className='Error404__link'>Retourner sur la page d'accueil</NavLink>
+        <NavLink to='/home' className='Error404__link'>Retourner sur la page d'accueil</NavLink>
     </div>
     )
   }
@@ -42,7 +41,7 @@ const HousingContent = () => {
               <p className='header-housing__host__info__name'>{housing.host.name}</p>
               <img src={housing.host.picture} alt="host" className='header-housing__host__info__picture'/>
             </div>
-            <StarsScaleRate scaleRating={housing.rating}/>
+            <StarsScale scaleRating={housing.rating}/>
             </div>
       </header>
       <div className="housing-section__collapses">
