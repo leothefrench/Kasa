@@ -6,48 +6,29 @@ import '../../styles/gallery.scss'
 const rightArrow = <FontAwesomeIcon icon={faAngleRight} />
 const leftArrow = <FontAwesomeIcon icon={faAngleLeft} />
 
-const Gallery = (props) => {
-  const [pictureIndex, setPicturesIndex] = useState(0)
+const Gallery = ({img}) => {
+  const [currentSlide, setCurrentSlide] = useState(0)
+  const length = img.length
 
-  const displayImg = () => {
-    const carousselImage = document.querySelector('.caroussel__container img')
-
-    if(carousselImage) {
-      return carousselImage.width
-    }
-    return 0
-  }
-
-  const nextPicture = () => {
-    if(pictureIndex === props.img.length - 1) {
-      setPicturesIndex(0)
-    } else {
-      setPicturesIndex(pictureIndex + 1)
-    }
-  }
-
-  const previousPicture = () => {
-    if(pictureIndex === 0) {
-      setPicturesIndex(props.img.length - 1)
-    } else {
-      setPicturesIndex(pictureIndex - 1)
-    }
-  }
+  const nextPicture = () => {setCurrentSlide( currentSlide === length - 1 ? 0 : currentSlide + 1 )}
+  const previousPicture = () => {setCurrentSlide( currentSlide === 0 ? length - 1 : currentSlide - 1)}
 
   return (
     <div className="caroussel">
-      <div className="caroussel__container" style={{transform: `translateX(-${pictureIndex * displayImg()}px)`}}>
-        { props.img.map((picture, i) => <img src={picture} key={i} alt="housing" className="caroussel__container__image" />) }
+      <div className="caroussel__container" >
+        { img.map((picture, index) => <img src={picture} key={index} alt="housing" className="caroussel__container__image" />) }
       </div>
 
       <div className="caroussel__arrowsControl">
         <i className='caroussel__arrowsControl__img' onClick={previousPicture}>{leftArrow}</i>
         <i className='caroussel__arrowsControl__img' onClick={nextPicture}>{rightArrow}</i>
       </div>
-      <div className="caroussel__picture__index">{ pictureIndex + 1 } / {props.img.length}</div>
+      <div className="caroussel__picture__index">{ currentSlide + 1 } / {length}</div>
 
     </div>
   )
 }
 
 export default Gallery
+
+// style={{transform: `translateX(-${pictureIndex * displayImg()}px)`}

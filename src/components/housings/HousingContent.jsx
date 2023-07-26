@@ -29,7 +29,7 @@ const HousingContent = () => {
       <Gallery img={housing.pictures}/>
       <header className='header-housing'>
         <div className='header-housing__info'>
-          <h1 className='header-housing__info__title'>{ housing.title}</h1>
+          <h1 className='header-housing__info__title'>{ housing.title }</h1>
           <h2 className='header-housing__info__subtitle'>{ housing.location }</h2>
           <div className="header-housing__info__tags">
             { tagsInformation }
@@ -41,7 +41,7 @@ const HousingContent = () => {
               <p className='header-housing__host__info__name'>{housing.host.name}</p>
               <img src={housing.host.picture} alt="host" className='header-housing__host__info__picture'/>
             </div>
-            <StarsScale scaleRating={housing.rating}/>
+            <StarsScale scaleRating={housing.rating}/> 
             </div>
       </header>
       <div className="housing-section__collapses">
@@ -51,7 +51,7 @@ const HousingContent = () => {
         <div className="housing-section__collapses__content">
           <Collapse title='Équipements' content={housing.equipments.map((equipment, index) => (
             <ul key={index}>
-              <li>{equipment}</li>
+              <li>{equipment}</li> 
             </ul>
           ))} />
         </div>
