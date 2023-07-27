@@ -33,7 +33,7 @@ const HousingContent = () => {
               <img src={housing.host.picture} alt="host" className='header-housing__host__info__picture'/>
             </div>
             <StarsScale scaleRating={housing.rating}/> 
-            </div>
+          </div>
       </header>
       <div className="housing-section__collapses">
         <div className="housing-section__collapses__content">

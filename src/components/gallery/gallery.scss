@@ -108,19 +108,27 @@
         &__tags {
             display: flex;
             text-align: center;
-        }
-
-        &__tags > p {
-            background-color: $primary-color;
-            border-radius: 0.63rem;
-            font-size: .7rem;
-            color: $secondary-color;
-            margin-right: .62rem;
-            padding: 0.4rem 2.33rem;
-            @media (max-width: 768px) {
-                padding: .1rem 1rem;
+            &__element {
+                background-color: $primary-color;
+                border-radius: 0.63rem;
+                font-size: .7rem;
+                color: $secondary-color;
+                margin-right: .62rem;
+                padding: 0.4rem 2.33rem;
             }
         }
+
+        // &__tags > p {
+        //     background-color: $primary-color;
+        //     border-radius: 0.63rem;
+        //     font-size: .7rem;
+        //     color: $secondary-color;
+        //     margin-right: .62rem;
+        //     padding: 0.4rem 2.33rem;
+        //     @media (max-width: 768px) {
+        //         padding: .1rem 1rem;
+        //     }
+        // }
     }
 
     &__host {

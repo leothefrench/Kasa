@@ -15,7 +15,7 @@ const Gallery = ({img}) => {
 
   return (
     <div className="caroussel">
-      <div className="caroussel__container" style={{ transform: `translate: (-${currentSlide * 100})`}}>
+      <div className="caroussel__container">
         { img.map((picture, index) => <img src={picture} key={index} alt="housing" className="caroussel__container__image" />) }
       </div>
 
@@ -30,5 +30,3 @@ const Gallery = ({img}) => {
 }
 
 export default Gallery
-
-// style={{transform: `translateX(-${pictureIndex * displayImg()}px)`}

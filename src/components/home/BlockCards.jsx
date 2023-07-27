@@ -1,6 +1,6 @@
 import housings from '../../datas/datasHousings'
 import Cards from '../cards/Cards'
-import '../../styles/blockCards.scss'
+import './blockCards.scss'
 
 const BlockCards = () => {
   return (
