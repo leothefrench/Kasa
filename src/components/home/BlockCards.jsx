@@ -1,5 +1,5 @@
-import Cards from './Cards'
 import housings from '../../datas/datasHousings'
+import Cards from '../cards/Cards'
 import '../../styles/blockCards.scss'
 
 const BlockCards = () => {
@@ -12,3 +12,4 @@ const BlockCards = () => {
   )
 }
 export default BlockCards
+ 

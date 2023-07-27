@@ -1,5 +1,5 @@
-import '../../styles/aboutContent.scss'
-import Collapse from '../layout/Collapse'
+import './aboutContent.scss'
+import Collapse from '../collapse/Collapse'
 
 const AboutContent = () => {
   return (

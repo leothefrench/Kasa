@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faAngleLeft, faAngleRight} from '@fortawesome/free-solid-svg-icons'
-import '../../styles/gallery.scss'
+import './gallery.scss'
 
 const rightArrow = <FontAwesomeIcon icon={faAngleRight} />
 const leftArrow = <FontAwesomeIcon icon={faAngleLeft} />
@@ -15,7 +15,7 @@ const Gallery = ({img}) => {
 
   return (
     <div className="caroussel">
-      <div className="caroussel__container" >
+      <div className="caroussel__container" style={{ transform: `translate: (-${currentSlide * 100})`}}>
         { img.map((picture, index) => <img src={picture} key={index} alt="housing" className="caroussel__container__image" />) }
       </div>
 

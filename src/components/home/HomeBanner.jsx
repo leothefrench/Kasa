@@ -1,5 +1,5 @@
-import Banner from '../layout/Banner'
 import homeBanner from '../../assets/homeBanner.png'
+import Banner from '../banner/Banner'
 
 const HomeBanner = () => {
   return (

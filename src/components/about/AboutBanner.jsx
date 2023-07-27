@@ -1,5 +1,5 @@
-import Banner from '../layout/Banner'
 import aboutBanner from '../../assets/aPropos.png'
+import Banner from '../banner/banner.scss'
 
 const AboutBanner = () => {
   return (
@@ -7,3 +7,4 @@ const AboutBanner = () => {
   )
 }
 export default AboutBanner
+

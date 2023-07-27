@@ -1,4 +1,4 @@
-@import 'variables';
+@import '../../styles/variables';
 
 .caroussel {
     width: 90%;
@@ -16,7 +16,7 @@
 
     &__container {
         display: flex;
-        transition: transform .7s ease;
+        transition: transform 0.2s ease;
 
 
         &__image {
@@ -167,7 +167,7 @@
     &__stars--color {
         color: $primary-color;
         &--grey {
-            color: rgb(13, 148, 31);
+            color: #E3E3E3;
         }
     }
 }
