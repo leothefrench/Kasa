@@ -21,10 +21,13 @@ const Gallery = ({img}) => {
 
   return (
     <div className="caroussel">
-      <div className="caroussel__container">
-        { img.map((picture, index) => <img src={picture} key={index} alt="housing" className="caroussel__container__image" />) }
-      </div>
-
+        { img.map((picture, index) => { 
+          return (
+            <div key={index} className={index === currentSlide ? 'caroussel__container--active' : 'caroussel__container' } >
+              {index === currentSlide && <img src={picture}  alt="housing" className="caroussel__container__image" /> }
+            </div>
+          )
+         })}
       <div className="caroussel__arrowsControl">
         <i className='caroussel__arrowsControl__img' onClick={previousPicture}>{leftArrow}</i>
         <i className='caroussel__arrowsControl__img' onClick={nextPicture}>{rightArrow}</i>

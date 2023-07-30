@@ -3,7 +3,7 @@ import Banner from '../banner/Banner'
 
 const HomeBanner = () => {
   return (
-    <Banner src={homeBanner} title='Chez vous,/n partout et ailleurs' />
+    <Banner src={homeBanner} title='Chez vous, partout et ailleurs' />
   )
 }
 export default HomeBanner
