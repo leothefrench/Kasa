@@ -10,8 +10,14 @@ const Gallery = ({img}) => {
   const [currentSlide, setCurrentSlide] = useState(0)
   const length = img.length
 
+  if(!Array.isArray(img) || length <=0) {
+    return null
+  }
+
   const nextPicture = () => {setCurrentSlide( currentSlide === length - 1 ? 0 : currentSlide + 1 )}
   const previousPicture = () => {setCurrentSlide( currentSlide === 0 ? length - 1 : currentSlide - 1)}
+
+  console.log(currentSlide);
 
   return (
     <div className="caroussel">

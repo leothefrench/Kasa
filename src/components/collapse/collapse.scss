@@ -1,0 +1,54 @@
+@import '../../styles/variables';
+
+.collapse {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $primary-color;
+    border-radius: 0.63rem;
+    width: 100%;
+
+    @media (max-width: 768px) {
+        border-radius: 0.3125rem;
+    }
+
+    &__title {
+        margin-left: 1.13rem;
+        @include text-typography;
+        font-size: 1rem;
+        margin-top: 0.35rem;
+        margin-bottom: 0.46rem;
+
+        @media (max-width: 768px) {
+            border-radius: 0.3125rem;
+            font-size: .75rem;
+        }
+    }
+
+    &__arrow {
+        color: $color-text;
+        font-size: 1.2rem;
+        margin: 1rem 1.13rem 0.46rem 0;
+    }
+
+    &__content {
+        @include text-typography;
+        font-weight: 400;
+        font-size: 1rem;
+        color: $primary-color;
+        background-color: $secondary-color;
+        border-radius: 0 0 0.63rem 0.63rem;
+        padding: 2.25rem 1.69rem 1.19rem 1.12rem;
+        flex-shrink: 0;
+
+        & ul li {
+        list-style-type: none;
+        }
+
+        @media (max-width: 768px) {
+            font-size: .75rem;
+            height: 8rem;
+            border-bottom: 1rem;
+        }
+    }
+}

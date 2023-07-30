@@ -7,6 +7,7 @@ const Cards = ({id, title, cover}) => {
         <img src={cover} alt={title} className='card__link__cover' />
       </a>
       <h2 className='card__title'>{title}</h2>
+      <div className="card__overlay"></div>
     </li>
   )
 }

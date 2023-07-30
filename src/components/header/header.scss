@@ -27,7 +27,6 @@
     &__link {
         color: $primary-color;
         margin-left: 3rem;
-
         @media (max-width: 768px) {
             font-size: .75rem;
             margin-left: 1rem;
@@ -41,5 +40,3 @@
         }
     }
 }
-
-

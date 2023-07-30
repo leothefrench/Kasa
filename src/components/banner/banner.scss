@@ -1,5 +1,6 @@
 .banner {
     width: 90%;
+    height: 111px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,6 +20,7 @@
         
         @media (max-width: 768px) {
             border-radius: .75rem;
+            height: 111px;
         }
     }
     
@@ -31,6 +33,10 @@
         @media (max-width: 768px) {
             font-size: 1rem;
             width: 33%;
+            left: 3%;
+            width: 65% !important;
+            padding-left: 1rem;
+            white-space: pre-line;
         }
     }
 }

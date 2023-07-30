@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faAngleUp, faAngleDown} from '@fortawesome/free-solid-svg-icons'
+import './collapse.scss'
 
 const upArrow = <FontAwesomeIcon icon={faAngleUp} />
 const downArrow = <FontAwesomeIcon icon={faAngleDown} />
