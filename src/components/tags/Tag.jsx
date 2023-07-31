@@ -1,10 +1,7 @@
-const Tag = (props) => {
-  console.log(props.tagsInformation)
-  return (
-    <li className="header-housing__info__tags__element">
+const Tag = ({tagInformation}) => {
 
-    { props.tagsInformation }
-  </li>
+  return (
+    <li className="header-housing__info__tags__element">{ tagInformation }</li>     
   )
 }
 export default Tag

@@ -21,18 +21,20 @@ const HousingContent = () => {
         <div className='header-housing__info'>
           <h1 className='header-housing__info__title'>{ housing.title }</h1>
           <h2 className='header-housing__info__subtitle'>{ housing.location }</h2>
+
           <ul className="header-housing__info__tags">
-            {housing.tags.map((tag, index) => (
-              <Tag key={index} tagInformation={tag} />
+            {housing.tags.map((tagInfo, index) => (
+              <Tag tagInformation={tagInfo} key={index}/>
             ))}
           </ul>
+
         </div>
           <div className='header-housing__host'>
             <div className='header-housing__host__info'>
               <p className='header-housing__host__info__name'>{housing.host.name}</p>
               <img src={housing.host.picture} alt="host" className='header-housing__host__info__picture'/>
             </div>
-            <StarsScale scaleRating={housing.rating}/> 
+            <StarsScale scaleRating={housing.rating}/>  
           </div>
       </header>
       <div className="housing-section__collapses">

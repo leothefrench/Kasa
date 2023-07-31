@@ -10,6 +10,6 @@ const BlockCards = () => {
         ))}
     </ul>
   )
-}
+} 
 export default BlockCards
  
