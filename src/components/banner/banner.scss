@@ -8,6 +8,7 @@
 
     @media (max-width:768px ) {
         width: 95%;
+        justify-content: flex-start;
     }
 
     &__img {
@@ -34,10 +35,9 @@
         align-items: center;
 
         @media (max-width: 768px) {
-            font-size: 1rem;
-            justify-content: left;
-            width: 8rem;
-            // margin-left:2.5rem;
+            font-size: 1.5rem;
+            width: 12rem;
+            margin-left: 1rem;
             // white-space: pre-line;
         }
     }

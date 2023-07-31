@@ -22,7 +22,7 @@ const HousingContent = () => {
           <h1 className='header-housing__info__title'>{ housing.title }</h1>
           <h2 className='header-housing__info__subtitle'>{ housing.location }</h2>
           
-          <ul className="header-housing__info__tags">
+          <ul className="header-housing__info__tags"> 
             {housing.tags.map((tagInfo, index) => (
               <Tag tagInformation={tagInfo} key={index}/>
             ))}
