@@ -1,4 +1,4 @@
-import { NavLink, useParams} from 'react-router-dom'
+import { useParams} from 'react-router-dom'
 import housings from '../../datas/datasHousings'
 import Gallery  from  '../gallery/Gallery'
 import Tag from '../../components/tags/Tag'
@@ -21,7 +21,7 @@ const HousingContent = () => {
         <div className='header-housing__info'>
           <h1 className='header-housing__info__title'>{ housing.title }</h1>
           <h2 className='header-housing__info__subtitle'>{ housing.location }</h2>
-
+          
           <ul className="header-housing__info__tags">
             {housing.tags.map((tagInfo, index) => (
               <Tag tagInformation={tagInfo} key={index}/>
@@ -37,6 +37,7 @@ const HousingContent = () => {
             <StarsScale scaleRating={housing.rating}/>  
           </div>
       </header>
+      
       <div className="housing-section__collapses">
         <div className="housing-section__collapses__content">
           <Collapse title='Description' content={housing.description}/>

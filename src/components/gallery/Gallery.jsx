@@ -9,7 +9,7 @@ const leftArrow = <FontAwesomeIcon icon={faAngleLeft} />
 const Gallery = ({img}) => {
   const [currentSlide, setCurrentSlide] = useState(0)
   const length = img.length
-
+  // Check Existing Array
   if(!Array.isArray(img) || length <=0) {
     return null
   }
@@ -23,17 +23,24 @@ const Gallery = ({img}) => {
     <div className="caroussel">
         { img.map((picture, index) => { 
           return (
-            <div key={index} className={index === currentSlide ? 'caroussel__container--active' : 'caroussel__container' } >
-              {index === currentSlide && <img src={picture}  alt="housing" className="caroussel__container__image" /> }
-            </div>
+            <>
+              <div key={index} className={!index === currentSlide ? 'caroussel__container' : 'caroussel__container--active' } >
+                {index === currentSlide && <img src={picture}  alt="housing" className="caroussel__container__image" /> }
+              </div>
+              <div className="caroussel__arrowsControl">
+                {length > 1 && (
+                  <>
+                    <i className='caroussel__arrowsControl__img' onClick={previousPicture}>{leftArrow}</i>
+                    <i className='caroussel__arrowsControl__img' onClick={nextPicture}>{rightArrow}</i>
+                  </>
+                )}
+              </div>
+              {length > 1 && (
+                <div className="caroussel__picture__index">{ currentSlide + 1 } / {length}</div>
+              )}
+            </>
           )
          })}
-      <div className="caroussel__arrowsControl">
-        <i className='caroussel__arrowsControl__img' onClick={previousPicture}>{leftArrow}</i>
-        <i className='caroussel__arrowsControl__img' onClick={nextPicture}>{rightArrow}</i>
-      </div>
-      <div className="caroussel__picture__index">{ currentSlide + 1 } / {length}</div>
-
     </div>
   )
 }

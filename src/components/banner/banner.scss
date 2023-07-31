@@ -29,14 +29,16 @@
         position: absolute;
         font-size: 2rem;
         color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
         @media (max-width: 768px) {
             font-size: 1rem;
-            width: 33%;
-            left: 3%;
-            width: 65% !important;
-            padding-left: 1rem;
-            white-space: pre-line;
+            justify-content: left;
+            width: 8rem;
+            // margin-left:2.5rem;
+            // white-space: pre-line;
         }
     }
 }

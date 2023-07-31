@@ -3,9 +3,6 @@
 .caroussel {
     width: 90%;
     margin: auto;
-    // display: flex;
-    // justify-content: center;
-    // overflow: hidden;
     position: relative;
 
     &:hover {
@@ -58,7 +55,6 @@
                 opacity: 1;
             } 
             @media (max-width: 768px) {
-                width: 13px;
                 font-size: 2rem;
             }
         }
@@ -76,6 +72,10 @@
     top: 91%;
     left: 50%;
     transition: opacity 250ms ease-in-out;
+
+        @media (max-width: 768px) {
+            display: none;
+        }
     }
 }
 
@@ -111,6 +111,8 @@
         &__tags {
             display: flex;
             text-align: center;
+            list-style-type: none;
+            
             &__element {
                 background-color: $primary-color;
                 border-radius: 0.63rem;
@@ -120,18 +122,6 @@
                 padding: 0.4rem 2.33rem;
             }
         }
-
-        // &__tags > p {
-        //     background-color: $primary-color;
-        //     border-radius: 0.63rem;
-        //     font-size: .7rem;
-        //     color: $secondary-color;
-        //     margin-right: .62rem;
-        //     padding: 0.4rem 2.33rem;
-        //     @media (max-width: 768px) {
-        //         padding: .1rem 1rem;
-        //     }
-        // }
     }
 
     &__host {

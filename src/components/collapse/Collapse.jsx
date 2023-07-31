@@ -10,7 +10,7 @@ const Collapse = (props) => {
 
   const [open, setOpen] = useState(false)
 
-  const openCollapse = (props) => {
+  const openCollapse = () => {
     setOpen((open) => !open)
   }
 
