@@ -1,5 +1,5 @@
 import HomeBanner from '../components/home/HomeBanner'
-import BlockCards from '../components/home/BlockCards'
+import BlockCards from '../components/blockCards/BlockCards'
 
 const Home = () => {
   return (

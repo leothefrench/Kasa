@@ -71,10 +71,6 @@
     top: 91%;
     left: 50%;
     transition: opacity 250ms ease-in-out;
-
-        @media (max-width: 768px) {
-            display: none;
-        }
     }
 }
 
@@ -152,6 +148,9 @@
             &__picture {
                 width: 5.5rem;
                 border-radius: 50%;
+                @media (max-width: 768px) {
+                    width: 4.5rem;
+                }
             }
         }
     }
