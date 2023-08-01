@@ -6,7 +6,7 @@ import './collapse.scss'
 const upArrow = <FontAwesomeIcon icon={faAngleUp} />
 const downArrow = <FontAwesomeIcon icon={faAngleDown} />
 
-const Collapse = (props) => {
+const Collapse = ({title, content}) => {
 
   const [open, setOpen] = useState(false)
 
@@ -17,11 +17,11 @@ const Collapse = (props) => {
   return (
     <>
       <div onClick={openCollapse} className='collapse'>
-        <h2 className='collapse__title'>{props.title}</h2>
+        <h2 className='collapse__title'>{title}</h2>
         {!open ? <i className='collapse__arrow'>{downArrow}</i> : <i className='collapse__arrow'>{upArrow}</i>}
       </div>
 
-      {open && <div className='collapse__content'>{props.content}</div>}
+      {open && <div className='collapse__content'>{content}</div>}
     </>
   )
 }

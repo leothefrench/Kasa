@@ -9,7 +9,7 @@ const leftArrow = <FontAwesomeIcon icon={faAngleLeft} />
 const Gallery = ({img}) => {
   const [currentSlide, setCurrentSlide] = useState(0)
   const length = img.length
-  // Check Existing if img is an array
+  // Check Existing img array
   if(!Array.isArray(img) || length <=0) {
     return null
   }
@@ -23,8 +23,8 @@ const Gallery = ({img}) => {
     <div className="caroussel">
         { img.map((picture, index) => { 
           return (
-            <>
-              <div key={index} className={!index === currentSlide ? 'caroussel__container' : 'caroussel__container--active' } >
+            <div key={index}>
+              <div  className={!index === currentSlide ? 'caroussel__container' : 'caroussel__container--active' } >
                 {index === currentSlide && <img src={picture}  alt="housing" className="caroussel__container__image" /> }
               </div>
               <div className="caroussel__arrowsControl">
@@ -38,7 +38,7 @@ const Gallery = ({img}) => {
               {length > 1 && (
                 <div className="caroussel__picture__index">{ currentSlide + 1 } / {length}</div>
               )}
-            </>
+            </div>
           )
          })}
     </div>
